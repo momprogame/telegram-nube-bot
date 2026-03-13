@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: telegram-nube-reduc-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 8213746990:AAG-jpTTnok-VWRlMb02J5w2yFmastnhljQ
+      - key: NUBE_USER
+        value: marcos.puig
+      - key: NUBE_PASS
+        value: covid*.202N569e929
+      - key: NUBE_URL
+        value: https://nube.reduc.edu.cu
